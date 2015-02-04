@@ -1,6 +1,14 @@
+html { 
+	-webkit-transition: none;
+	-moz-transition: none;
+	-o-transition: none;
+	-ms-transition: none;
+	transition: none;
+}
 body{
 	text-align: center !important;
 	background-color: white;
+	height: auto;
 }
 .page_wrap {
 	overflow: hidden;
@@ -15,12 +23,11 @@ body{
 	background: #eaeaea;
 }
 .container {
-	padding-top: 100px;
+	padding-top: 150px;
 	width: 60%;
 	margin: 0 auto;
 
 }
-
 h2, h1 {
 	text-transform: inherit;
 	letter-spacing: normal;
@@ -78,6 +85,8 @@ p.final {
 	cursor: pointer;
 	color: #444;
 	padding: 5px;
+	font-family: Raleway, sans-serif !important;
+	font-weight: 800;
 	display: inline-block;
 }
 #end_message {
@@ -120,9 +129,8 @@ padding: 40px 0 20px 0;
 
 /*bubbles*/
 
-#bubble_one,
-#bubble_two,
-#bubble_three {
+.bubbles{
+	height: 0;
 	float: left;
 	position: absolute;
 	opacity: 1;
@@ -130,8 +138,8 @@ padding: 40px 0 20px 0;
 	left: 30%;
 	z-index: 10;
 	width: 73px;
-	height: 187px;
-	background: url('bubbles_one.png') no-repeat center center;
+/*	height: 187px;
+*/	background: url('bubbles_one.png') no-repeat center center;
 }
 #bubble_two {
 	background: url('bubbles_two.png') no-repeat center center;
